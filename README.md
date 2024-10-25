@@ -51,11 +51,11 @@ C:\Users\<User>\Documents\VideoSlice> videoslice -help
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
-    * Initial Release
+    * Couldnt even run it lmao
+    * See [commit change](https://github.com/Skeibol/VideoSlice/commit/a53b4111529420a312c511aa78ac747233cccd49) or See [release history](https://github.com/Skeibol/VideoSlice/commits/main/)
+* 0.1
+    * Magically works
 
 ## License
 
