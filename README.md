@@ -17,6 +17,11 @@ Application for converting video frames to a mosaic
 ```
 C:\Users\<User>\Documents\VideoSlice
 ```
+* If using for the first time, run
+```console
+C:\Users\<User>\Documents\VideoSlice> videoslice
+```
+* Place mp4 inside the videos folder.
 * type this command into the prompt:
 ```console
 C:\Users\<User>\Documents\VideoSlice> videoslice -file <video_name.mp4>
