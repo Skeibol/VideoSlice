@@ -6,7 +6,7 @@ Application for converting video frames to a mosaic
 
 #### Installing
 
-* [Download](https://github.com/Skeibol/VideoSlice/raw/refs/heads/main/dist/VideoSlicer.exe)
+* [Download](https://github.com/Skeibol/VideoSlice/raw/refs/heads/main/dist/VideoSlice.exe)
 * Put inside a folder
 
 #### Executing program
