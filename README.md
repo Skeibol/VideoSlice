@@ -21,7 +21,7 @@ C:\Users\<User>\Documents\VideoSlice
 ```console
 C:\Users\<User>\Documents\VideoSlice> videoslice
 ```
-* Place mp4 inside the videos folder.
+* Place mp4 inside the videos folder (Needs to be 4:3. Use sample video from videos folder).
 * type this command into the prompt:
 ```console
 C:\Users\<User>\Documents\VideoSlice> videoslice -file <video_name.mp4>
