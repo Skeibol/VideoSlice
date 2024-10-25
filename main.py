@@ -25,6 +25,7 @@ def parse():
     prs.add_argument('-cols', dest='cols', type=int, help='no. of cols(default 10', default=10)
     prs.add_argument('-help', '--help', action='help', default=argparse.SUPPRESS,
                         help='Show this help message and exit.')
+    prs.add_argument('-init', action='store_true')
 
 
 
@@ -59,15 +60,22 @@ def tryMakeFolders():
 
 
 
+def initialize():
+    tryMakeFolders()
 
 if __name__ == "__main__":
     IMAGE_DIRECTORY = "./images"
     VIDEOS_DIRECTORY = "./videos"
 
-    tryMakeFolders()
+
     args = parse()
+    if args.init:
+        initialize()
+        raise SystemExit("Initialized app. . .  Put video in videos folder")
+
     if args.src is None:
         raise SystemExit("Bad file path. Include file name and extension and make sure the file is in the videos folder (-src <filename.mp4>)")
+
     A3_DIMS = (1191, 842)
     FRAME_DIMS = (args.width, args.height)  # 4*20, 3*20
     COLUMNS = args.cols
@@ -92,7 +100,8 @@ if __name__ == "__main__":
         for j in range(COLUMNS):
             reader.getNextFrame()
             frame = reader.getReshapedFrame(FRAME_DIMS)
-            makeMosaic(j*A3Width,i*A3Height,A3Width,A3Height, A3Paper, frame)
+            if frame is not None:
+                makeMosaic(j*A3Width,i*A3Height,A3Width,A3Height, A3Paper, frame)
 
 
 

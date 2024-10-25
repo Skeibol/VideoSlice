@@ -14,15 +14,20 @@ Application for converting video frames to a mosaic
 * Navigate to VideoSlicer.exe folder
 * Open the folder in CMD prompt
 * Example:
+
 ```
 C:\Users\<User>\Documents\VideoSlice
 ```
-* If using for the first time, run
+
+* If using for the first time, run:
+
 ```console
-C:\Users\<User>\Documents\VideoSlice> videoslice
+C:\Users\<User>\Documents\VideoSlice> videoslice -init
 ```
+
 * Place mp4 inside the videos folder (Needs to be 4:3. Use sample video from videos folder).
 * type this command into the prompt:
+
 ```console
 C:\Users\<User>\Documents\VideoSlice> videoslice -file <video_name.mp4>
 ```
@@ -45,6 +50,7 @@ options:
 ## Help
 
 Use the -help flag to bring up help and more options.
+
 ```console
 C:\Users\<User>\Documents\VideoSlice> videoslice -help
 ```
@@ -58,9 +64,12 @@ C:\Users\<User>\Documents\VideoSlice> videoslice -help
 
 * 0.1
     * Couldnt even run it lmao
-    * See [commit change](https://github.com/Skeibol/VideoSlice/commit/a53b4111529420a312c511aa78ac747233cccd49) or See [release history](https://github.com/Skeibol/VideoSlice/commits/main/)
-* 0.1
+    * See [commit change](https://github.com/Skeibol/VideoSlice/commit/a53b4111529420a312c511aa78ac747233cccd49) or
+      See [release history](https://github.com/Skeibol/VideoSlice/commits/main/)
+* 0.2
     * Magically works
+* 0.3
+    * Works more magic
 
 ## License
 
